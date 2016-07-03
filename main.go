@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/docker/machine/libmachine/drivers/plugin"
-	goxhyve "github.com/hooklift/xhyve"
+	goxhyve "github.com/thenewnormal/libxhyve"
 	"github.com/zchee/docker-machine-driver-xhyve/xhyve"
 )
 

@@ -1,29 +1,14 @@
 {
 	"ImportPath": "github.com/zchee/docker-machine-driver-xhyve",
-	"GoVersion": "devel",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v74",
 	"Packages": [
-		"github.com/zchee/docker-machine-driver-xhyve",
-		"github.com/zchee/docker-machine-driver-xhyve/vmnet",
-		"github.com/zchee/docker-machine-driver-xhyve/xhyve"
+		"./..."
 	],
 	"Deps": [
 		{
-			"ImportPath": "github.com/Azure/go-ansiterm",
-			"Rev": "70b2c90b260171e829f1ebd7c17f600c11858dbe"
-		},
-		{
-			"ImportPath": "github.com/Sirupsen/logrus",
-			"Comment": "v0.8.7-55-gf7f79f7",
-			"Rev": "f7f79f729e0fbe2fcc061db48a9ba0263f588252"
-		},
-		{
 			"ImportPath": "github.com/davecgh/go-spew/spew",
 			"Rev": "5215b55f46b2b919f50a1df0eaa5886afe4e3b3d"
-		},
-		{
-			"ImportPath": "github.com/docker/docker/pkg/system",
-			"Comment": "v1.4.1-9437-g3233f45",
-			"Rev": "3233f4560912fee87857f653a8bb32050dc04927"
 		},
 		{
 			"ImportPath": "github.com/docker/docker/pkg/term",
@@ -31,48 +16,54 @@
 			"Rev": "3233f4560912fee87857f653a8bb32050dc04927"
 		},
 		{
-			"ImportPath": "github.com/docker/go-units",
-			"Comment": "v0.1.0-21-g0bbddae",
-			"Rev": "0bbddae09c5a5419a8c6dcdd7ff90da3d450393b"
+			"ImportPath": "github.com/docker/machine/libmachine/drivers",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
+			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
 		},
 		{
-			"ImportPath": "github.com/docker/machine/libmachine/drivers",
-			"Comment": "v0.5.6-157-g36aed62",
+			"ImportPath": "github.com/docker/machine/libmachine/drivers/plugin",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
+			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
+		},
+		{
+			"ImportPath": "github.com/docker/machine/libmachine/drivers/plugin/localbinary",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
+			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
+		},
+		{
+			"ImportPath": "github.com/docker/machine/libmachine/drivers/rpc",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
 			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
 		},
 		{
 			"ImportPath": "github.com/docker/machine/libmachine/log",
-			"Comment": "v0.5.6-157-g36aed62",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
 			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
 		},
 		{
 			"ImportPath": "github.com/docker/machine/libmachine/mcnflag",
-			"Comment": "v0.5.6-157-g36aed62",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
 			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
 		},
 		{
 			"ImportPath": "github.com/docker/machine/libmachine/mcnutils",
-			"Comment": "v0.5.6-157-g36aed62",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
 			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
 		},
 		{
 			"ImportPath": "github.com/docker/machine/libmachine/ssh",
-			"Comment": "v0.5.6-157-g36aed62",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
 			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
 		},
 		{
 			"ImportPath": "github.com/docker/machine/libmachine/state",
-			"Comment": "v0.5.6-157-g36aed62",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
 			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
 		},
 		{
 			"ImportPath": "github.com/docker/machine/libmachine/version",
-			"Comment": "v0.5.6-157-g36aed62",
+			"Comment": "v0.6.0-rc1-89-g36aed62",
 			"Rev": "36aed62f39f28b90694f163f3c227a390b5b989c"
-		},
-		{
-			"ImportPath": "github.com/hooklift/xhyve",
-			"Rev": "219dc33c05fa5c7c0529751c029b4ac66844d67a"
 		},
 		{
 			"ImportPath": "github.com/johanneswuerbach/nfsexports",
@@ -88,6 +79,10 @@
 			"Rev": "67106a5111a06241c8d84952c33214675f51a34a"
 		},
 		{
+			"ImportPath": "github.com/thenewnormal/libxhyve",
+			"Rev": "908a0965697998a451fce7e3e96db4bb37a1833f"
+		},
+		{
 			"ImportPath": "golang.org/x/crypto/curve25519",
 			"Rev": "beef0f4390813b96e8e68fd78570396d0f4751fc"
 		},
@@ -96,8 +91,8 @@
 			"Rev": "beef0f4390813b96e8e68fd78570396d0f4751fc"
 		},
 		{
-			"ImportPath": "golang.org/x/sys/unix",
-			"Rev": "833a04a10549a95dc34458c195cbad61bbb6cb4d"
+			"ImportPath": "golang.org/x/crypto/ssh/terminal",
+			"Rev": "beef0f4390813b96e8e68fd78570396d0f4751fc"
 		}
 	]
 }
